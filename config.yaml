@@ -17,5 +17,5 @@ epochs : 10
 embedding_dim : 64
 hidden_dim : 128
 max_chars : 1000
-learning_rate': 0.001
-bidirectional': False
+learning_rate: 0.001
+bidirectional: False
