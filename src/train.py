@@ -30,9 +30,9 @@ from torchtext.data.example import Example
 from typing import Iterable
 from torch.nn.utils.rnn import pack_padded_sequence, pad_packed_sequence
 
-from src.data import load_data
-from src.model import GRUIdentifier
-from src.data import PAD_TOKEN
+from data import load_data
+from model import GRUIdentifier
+from data import PAD_TOKEN
 
 def save_model(output_dir, state, filename='best_model.pth.tar'):
     path = os.path.join(output_dir, filename)
