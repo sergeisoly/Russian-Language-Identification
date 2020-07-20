@@ -11,8 +11,9 @@ data:
 	unzip ./wili-2018.zip?download=1 -d ./data
 	rm ./wili-2018.zip?download=1
 
-	unrar e /content/drive/My\ Drive/ABBYY_MIPT/Lenta.rar ./data/lenta/
+	gdown https://drive.google.com/uc?id=1NN9ttpm5bBfN1B8Bop0fWR2M9Hgo4Ah4
+	unrar e ./Lenta.rar ./data/lenta/
 
-split: data
-	python3 src/split_dataset.py data/lenta data
+split_data: data
+	python3 src/split_datasets.py data/lenta data
 
