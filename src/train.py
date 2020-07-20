@@ -90,7 +90,7 @@ def test(model, testing_data : Iterator, output_matrix : bool=False, level: str=
     return (precision, recall, acc, f1_score)
 
 
-def train(par_optimizer, model,
+def train(device, par_optimizer, model,
           training_data: Iterator=None, validation_data: Iterator=None, testing_data: Iterator=None,
           learning_rate: float=1e-3, epochs: int=0, resume_state: dict=None, resume: str="",
           log_frequency: int=0, eval_frequency: int=0, model_type="", output_dir="", scheduler=None,
@@ -251,7 +251,7 @@ def main():
 
     if use_cuda: model.cuda()
 
-    train(model=model,
+    train(device=device, model=model,
             training_data=training_iterator, validation_data=validation_iterator, testing_data=testing_iterator,
             par_optimizer=par_optimizer, scheduler=scheduler, resume_state=False,
         **cfg)
