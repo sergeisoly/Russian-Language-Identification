@@ -1,0 +1,11 @@
+batch_size : 128
+log_frequency : 100
+dropout_p : 0.0
+split_paragraphs : True
+eval_frequency : 500
+epochs : 10
+embedding_dim : 64
+hidden_dim : 128
+max_chars : 1000
+learning_rate': 0.001
+bidirectional': False
