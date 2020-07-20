@@ -1,11 +1,11 @@
-training_text: './data/x_train_split.txt',
-training_labels: './data/y_train_split.txt',
-testing_text: './data/x_test_split.txt',
-testing_labels: './data/y_test_split.txt',
-validation_text: './data/x_valid_split.txt',
-validation_labels: './data/y_valid_split.txt',
-taiga_train_path: './data/taiga_train/',
-taiga_valid_path: './data/taiga_valid/',
+training_text: './data/x_train_split.txt'
+training_labels: './data/y_train_split.txt'
+testing_text: './data/x_test_split.txt'
+testing_labels: './data/y_test_split.txt'
+validation_text: './data/x_valid_split.txt'
+validation_labels: './data/y_valid_split.txt'
+taiga_train_path: './data/taiga_train/'
+taiga_valid_path: './data/taiga_valid/'
 taiga_test_path: './data/taiga_test/'
 
 batch_size : 128
