@@ -113,7 +113,7 @@ def train(par_optimizer, model,
             scheduler.step()
      
         epoch_losses = []
-        bar = tqdm.notebook.tqdm(total=len(training_data), desc=f'Epoch {i}', position=0)
+        bar = tqdm.tqdm(total=len(training_data), desc=f'Epoch {i}', position=0)
         for j, batch in enumerate(iter(training_data)):
             model.train()
             par_optimizer.zero_grad()
