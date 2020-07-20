@@ -8,7 +8,7 @@ import math
 from data import PAD_TOKEN
 
 
-class GRUIdentifier(nn.Model):
+class GRUIdentifier(nn.Module):
     def __init__(self, vocab_size : int, n_classes : int, embedding_dim : int,
                  hidden_dim : int, bidirectional : bool, dropout_p : float,
                  **kwargs):
