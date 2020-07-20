@@ -235,12 +235,7 @@ def main():
 
     model = GRUIdentifier(char_vocab_size, n_classes, **cfg)
 
-    print("Vocab. size word: ", len(training_data.fields['paragraph'].vocab))
-    print("First 10 words: ", " ".join(training_data.fields['paragraph'].vocab.itos[:10]))
     print("Vocab. size chars: ", len(training_data.fields['characters'].vocab))
-    print("First 10 chars: ", " ".join(training_data.fields['characters'].vocab.itos[:10]))
-    print("Number of languages: ", n_classes)
-    print()
 
     par_optimizer = torch.optim.Adam(model.parameters(), lr=cfg["learning_rate"])
     scheduler = None
