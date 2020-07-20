@@ -5,7 +5,7 @@ import torch.nn.functional as F
 from torch.nn.utils.rnn import pack_padded_sequence, pad_packed_sequence
 import math
 
-from src.data import PAD_TOKEN
+from data import PAD_TOKEN
 
 
 class GRUIdentifier(nn.Model):
