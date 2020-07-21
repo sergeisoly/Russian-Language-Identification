@@ -13,7 +13,7 @@ https://colab.research.google.com/drive/10xdNNp-sbTY_M8gCAwWarQqIUd89-BOw?usp=sh
 
 Russain text are about 15 % of all samples
 
-Results on test set:
-precision:0.998
-recall: 0.990
-f1 score: 0.994
+Results on test set:\
+precision:0.998\
+recall: 0.990\
+f1 score: 0.994\
