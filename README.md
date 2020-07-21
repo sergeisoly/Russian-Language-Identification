@@ -16,4 +16,4 @@ Russain text are about 15 % of all samples
 Results on test set:\
 precision:0.998\
 recall: 0.990\
-f1 score: 0.994\
+f1 score: 0.994
