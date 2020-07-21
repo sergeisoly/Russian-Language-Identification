@@ -118,7 +118,7 @@ def test_data_reader(path: str, split_sentences, max_chars: int, level: str) -> 
 
     example = empty_example()
     #spacy_tokenizer = data.get_tokenizer("spacy")  # TODO: implement with word level
-    files = os.listdir(path)
+    files = sorted(os.listdir(path))
     for i, file_name in enumerate(files):
         with open(path + file_name, 'r') as f:
             x = f.read()
